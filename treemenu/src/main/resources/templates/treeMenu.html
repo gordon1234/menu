@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>程序树菜单</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!--<link href="../static/css/newMenuTree.css" type='text/css' rel='stylesheet'/>-->
+    <!--<script src="../static/js/newMenuTree.js"></script>-->
+
+    <link th:href="@{/css/newMenuTree.css}" rel="stylesheet" type="text/css"/>
+    <script th:src="@{/js/newMenuTree.js}"></script>
+
+</head>
+<body leftmargin="0" topmargin="0" onLoad="" style="width: 179px; height: 100%;">
+
+<div id="div_0" name="div_0" title="合同中心" style="width:100%;height:28px;">
+    <table style="width:100%;">
+        <tr>
+            <td id="td_0" name="td_0" onclick="td_onclick(this,'1','true');"
+                onmouseover="onmouse_over_Event(this,'1');" onmouseout="onmouse_out_Event(this,'1');"
+                class="td_1_close">合同中心
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="div_0_sub" name="div_0_sub" style="width:100%;display:none;">
+
+    <div id="div_0_0" name="div_0_0" title="集中立项" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_0_0" name="td_0_0"
+                    onclick="td_onclick(this,'2','false');
+                    DoMenu('/Liems/FrontServlet?programNo=B1PJS40008&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');"
+                    onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">集中立项
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_0_1" name="div_0_1" title="合同立项" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_0_1" name="td_0_1"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJS40006&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">合同立项
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_0_2" name="div_0_2" title="合同谈判" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_0_2" name="td_0_2"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJS40000&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">合同谈判
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_0_3" name="div_0_3" title="合同会签" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_0_3" name="td_0_3"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJS40007&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">合同会签
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_0_4" name="div_0_4" title="合同台账" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_0_4" name="td_0_4"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJS40001&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">合同台账
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_0_5" name="div_0_5" title="合同变更" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_0_5" name="td_0_5"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJS40002&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">合同变更
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<div id="div_1" name="div_1" title="结算中心" style="width:100%;height:28px;">
+    <table style="width:100%;">
+        <tr>
+            <td id="td_1" name="td_1" onclick="td_onclick(this,'1','true');"
+                onmouseover="onmouse_over_Event(this,'1');" onmouseout="onmouse_out_Event(this,'1');"
+                class="td_1_close">结算中心
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="div_1_sub" name="div_1_sub" style="width:100%;display:none;">
+
+    <div id="div_1_0" name="div_1_0" title="计划结算" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_1_0" name="td_1_0" onclick="td_onclick(this,'2','true');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_close">计划结算
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_1_0_sub" name="div_1_0_sub" style="width:100%;display:none;">
+
+        <div id="div_1_0_0" name="div_1_0_0" title="工程量报表" style="width:100%;height:28px;">
+            <table style="width:100%;">
+                <tr>
+                    <td id="td_1_0_0" name="td_1_0_0"
+                        onclick="td_onclick(this,'3','true');DoMenu('/Liems/FrontServlet?programNo=B1PJS40100&navigation=tree');"
+                        onmouseover="onmouse_over_Event(this,'3');" onmouseout="onmouse_out_Event(this,'3');"
+                        class="td_3_close">工程量报表
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="div_1_0_1" name="div_1_0_1" title="统供材料领用" style="width:100%;height:28px;">
+            <table style="width:100%;">
+                <tr>
+                    <td id="td_1_0_1" name="td_1_0_1"
+                        onclick="td_onclick(this,'3','true');DoMenu('/Liems/FrontServlet?programNo=B1PJS40101&navigation=tree');"
+                        onmouseover="onmouse_over_Event(this,'3');" onmouseout="onmouse_out_Event(this,'3');"
+                        class="td_3_close">统供材料领用
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="div_1_0_2" name="div_1_0_2" title="结算申请" style="width:100%;height:28px;">
+            <table style="width:100%;">
+                <tr>
+                    <td id="td_1_0_2" name="td_1_0_2"
+                        onclick="td_onclick(this,'3','true');DoMenu('/Liems/FrontServlet?programNo=B1PJS40104&navigation=tree');"
+                        onmouseover="onmouse_over_Event(this,'3');" onmouseout="onmouse_out_Event(this,'3');"
+                        class="td_3_close">结算申请
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="div_1_0_3" name="div_1_0_3" title="结算申请集中评审" style="width:100%;height:28px;">
+            <table style="width:100%;">
+                <tr>
+                    <td id="td_1_0_3" name="td_1_0_3"
+                        onclick="td_onclick(this,'3','true');DoMenu('/Liems/FrontServlet?programNo=B1PJS40120&navigation=tree');"
+                        onmouseover="onmouse_over_Event(this,'3');" onmouseout="onmouse_out_Event(this,'3');"
+                        class="td_3_close">结算申请集中评审
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <div id="div_1_1" name="div_1_1" title="财务结算" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_1_1" name="td_1_1" onclick="td_onclick(this,'2','true');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_close">财务结算
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_1_1_sub" name="div_1_1_sub" style="width:100%;display:none;">
+
+        <div id="div_1_1_0" name="div_1_1_0" title="结算单" style="width:100%;height:28px;">
+            <table style="width:100%;">
+                <tr>
+                    <td id="td_1_1_0" name="td_1_1_0"
+                        onclick="td_onclick(this,'3','true');DoMenu('/Liems/FrontServlet?programNo=B1PJS40200&navigation=tree');"
+                        onmouseover="onmouse_over_Event(this,'3');" onmouseout="onmouse_out_Event(this,'3');"
+                        class="td_3_close">结算单
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="div_1_1_1" name="div_1_1_1" title="付款登记" style="width:100%;height:28px;">
+            <table style="width:100%;">
+                <tr>
+                    <td id="td_1_1_1" name="td_1_1_1"
+                        onclick="td_onclick(this,'3','true');DoMenu('/Liems/FrontServlet?programNo=B1PJS40202&navigation=tree');"
+                        onmouseover="onmouse_over_Event(this,'3');" onmouseout="onmouse_out_Event(this,'3');"
+                        class="td_3_close">付款登记
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="div_1_1_2" name="div_1_1_2" title="结算单集中审核" style="width:100%;height:28px;">
+            <table style="width:100%;">
+                <tr>
+                    <td id="td_1_1_2" name="td_1_1_2"
+                        onclick="td_onclick(this,'3','true');DoMenu('/Liems/FrontServlet?programNo=B1PJS40203&navigation=tree');"
+                        onmouseover="onmouse_over_Event(this,'3');" onmouseout="onmouse_out_Event(this,'3');"
+                        class="td_3_close">结算单集中审核
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="div_2" name="div_2" title="统计分析" style="width:100%;height:28px;">
+    <table style="width:100%;">
+        <tr>
+            <td id="td_2" name="td_2" onclick="td_onclick(this,'1','true');"
+                onmouseover="onmouse_over_Event(this,'1');" onmouseout="onmouse_out_Event(this,'1');"
+                class="td_1_close">统计分析
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="div_2_sub" name="div_2_sub" style="width:100%;display:none;">
+
+    <div id="div_2_0" name="div_2_0" title="投资动态台账" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_2_0" name="td_2_0"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1BUP00722&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">投资动态台账
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_2_1" name="div_2_1" title="合同动态台账" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_2_1" name="td_2_1"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJG20080&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">合同动态台账
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_2_2" name="div_2_2" title="合同投资分析" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_2_2" name="td_2_2"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJG40320&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">合同投资分析
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_2_3" name="div_2_3" title="结算申请查询" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_2_3" name="td_2_3"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJG20082&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">结算申请查询
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_2_4" name="div_2_4" title="结算申请详表" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_2_4" name="td_2_4"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJG20083&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">结算申请详表
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_2_5" name="div_2_5" title="部门结算查询" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_2_5" name="td_2_5"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJG20085&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">部门结算查询
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_2_6" name="div_2_6" title="工程量统计分析" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_2_6" name="td_2_6"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJG20084&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">工程量统计分析
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_2_7" name="div_2_7" title="月度结算汇总表" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_2_7" name="td_2_7"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJP40201&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">月度结算汇总表
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_2_8" name="div_2_8" title="统供材领用分析" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_2_8" name="td_2_8"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJP40110&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">统供材领用分析
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_2_9" name="div_2_9" title="年度合同报表" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_2_9" name="td_2_9"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJS20083&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">年度合同报表
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_2_10" name="div_2_10" title="月度合同报表" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_2_10" name="td_2_10"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJS20081&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">月度合同报表
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_2_11" name="div_2_11" title="投资情况统计" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_2_11" name="td_2_11"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJG40328&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">投资情况统计
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<div id="div_3" name="div_3" title="基础数据" style="width:100%;height:28px;">
+    <table style="width:100%;">
+        <tr>
+            <td id="td_3" name="td_3" onclick="td_onclick(this,'1','true');"
+                onmouseover="onmouse_over_Event(this,'1');" onmouseout="onmouse_out_Event(this,'1');"
+                class="td_1_close">基础数据
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="div_3_sub" name="div_3_sub" style="width:100%;display:none;">
+
+    <div id="div_3_0" name="div_3_0" title="单位类型" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_3_0" name="td_3_0"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJS40003&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">单位类型
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_3_1" name="div_3_1" title="合作单位" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_3_1" name="td_3_1"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJS40004&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">合作单位
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_3_2" name="div_3_2" title="合同类型" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_3_2" name="td_3_2"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJS20050&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">合同类型
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_3_3" name="div_3_3" title="公司维护" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_3_3" name="td_3_3"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1OGS00010&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">公司维护
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_3_4" name="div_3_4" title="货币定义" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_3_4" name="td_3_4"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1CMS00140&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">货币定义
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_3_5" name="div_3_5" title="货币汇率" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_3_5" name="td_3_5"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1CMS00150&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">货币汇率
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_3_6" name="div_3_6" title="统供材类别" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_3_6" name="td_3_6"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=B1PJS40009&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">统供材类别
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="div_3_7" name="div_3_7" title="合同权限分配" style="width:100%;height:28px;">
+        <table style="width:100%;">
+            <tr>
+                <td id="td_3_7" name="td_3_7"
+                    onclick="td_onclick(this,'2','false');DoMenu('/Liems/FrontServlet?programNo=PJPOHPWERMST&navigation=tree');"
+                    onmouseover="onmouse_over_Event(this,'2');" onmouseout="onmouse_out_Event(this,'2');"
+                    class="td_2_nochild">合同权限分配
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Study</title>
+</head>
+<style>
+    #One, #Two, #Three {
+        width: 140px !important;
+        height: 40px !important;
+        background: pink !important;
+        color: #fff !important;
+        padding-left: 30px;
+    }
+</style>
+<body>
+<select id="One" onChange="changeTwoSel()" title=""></select>
+<select id="Two" onchange="changeThreeSel()" title=""></select>
+<select id="Three" title=""></select>
+<script>;
+var oneArray = ['请选择', '上衣', '裙装', '鞋子'];
+var twoArray = [['请选择'], ['羽绒服', '棉服', '妮子外套'], ['长裙', '短裙', 'A字裙'], ['帆布鞋', '短靴', '长靴']];
+var threeArray = [
+    [['请选择']],
+    [['白羽绒', '黑羽绒', '灰羽绒'], ['黑棉服', '白棉服', '灰棉服'], ['黑妮子', '白妮子', '灰妮子']],
+    [['白长裙', '黑长裙', '灰长裙'], ['黑短裙', '白短裙', '灰短裙'], ['黑A裙', '白A裙', '灰A裙']],
+    [['白布鞋', '黑布鞋', '灰布鞋'], ['黑短靴', '白短靴', '灰短靴'], ['黑长靴', '白长靴', '灰长靴']]
+];
+var oneSel = document.getElementById("One");
+var twoSel = document.getElementById('Two');
+var threeSel = document.getElementById('Three');
+var str = '';
+//下拉框一初始选项
+for (var i = 0; i < oneArray.length; i++) {
+    str += "<option value='" + i + "'>" + oneArray[i] + "</option>";
+}
+oneSel.innerHTML = str;
+str = '';
+//下拉框二初始选项
+for (var i = 0; i < twoArray[0].length; i++) {
+    str += "<option value='" + i + "'>" + twoArray[0][i] + "</option>";
+}
+twoSel.innerHTML = str;
+str = '';
+//下拉框三初始选项
+for (var i = 0; i < threeArray[0].length; i++) {
+    str += "<option>" + threeArray[0][0][i] + "</option>";
+}
+threeSel.innerHTML = str;
+
+//动态改变下拉框二选项
+function changeTwoSel() {
+    twoSel.innerHTML = '';
+    str = '';
+    var twoSelValue = parseInt(oneSel.value);
+    try {
+        for (var i = 0; i < twoArray[twoSelValue].length; i++) {
+            str += "<option value='" + i + "'>" + twoArray[twoSelValue][i] + "</option>";
+        }
+    } catch (ex) {
+        str = "<option>无选项</option>";
+    }
+    twoSel.innerHTML = str;
+    changeThreeSel();
+}
+
+//动态改变下拉框三选项
+function changeThreeSel() {
+    threeSel.innerHTML = '';
+    str = '';
+    var twoSelValue = parseInt(oneSel.value);
+    var threeSelValue = parseInt(twoSel.value);
+    try {
+        for (var i = 0; i < threeArray[twoSelValue][threeSelValue].length; i++) {
+            str += "<option value='" + i + "'>" + threeArray[twoSelValue][threeSelValue][i] + "</option>";
+        }
+    } catch (ex) {
+        str = "<option>无选项</option>";
+    }
+    threeSel.innerHTML = str;
+}
+</script>
+</body>
+</html>
